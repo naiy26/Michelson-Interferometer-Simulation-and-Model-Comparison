@@ -394,6 +394,7 @@ This project is provided for educational and research purposes.
 ```
 Michelson Interferometer d-value Prediction using Deep Learning
 Neural Network Models: SimpleCNN, ResNet18, EfficientNet-B0
+Naiya Regina
 2025
 ```
 
@@ -422,5 +423,6 @@ Neural Network Models: SimpleCNN, ResNet18, EfficientNet-B0
 **Version:** 1.0
 
 ---
+
 
 
