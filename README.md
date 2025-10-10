@@ -251,7 +251,7 @@ If you use this code in your research, please cite:
 
 ```
 Michelson Interferometer d-value Prediction using Deep Learning
-[Your Name/Institution]
+Naiya Regina
 2025
 ```
 
@@ -262,4 +262,5 @@ This project is provided as-is for educational and research purposes.
 ## Contact
 
 For questions or issues, please open an issue in the repository or contact [your email].
+
 
