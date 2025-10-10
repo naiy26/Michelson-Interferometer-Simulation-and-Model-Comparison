@@ -1,0 +1,188 @@
+D:\Documents\大创\Newton Rings\michelson\Michelson Project Final Submission\Michelson>python train_michelson.py
+
+============================================================
+DEVICE INFORMATION
+============================================================
+Device: cuda
+GPU: NVIDIA GeForce RTX 4070 Laptop GPU
+CUDA Version: 12.1
+GPU Memory: 8.00 GB
+cuDNN Enabled: True
+cuDNN Benchmark: True
+Mixed Precision: Enabled (FP16)
+Number of GPUs: 1
+============================================================
+
+Loading dataset...
+Loading preprocessed labels from: preprocessed/labels.csv
+Loaded 400 images with preprocessed labels
+Label range: 1.0000 - 4.9900 μm
+
+Dataset split:
+  Training: 279 images
+  Validation: 61 images
+  Testing: 60 images
+  Label range: 1.00 - 4.99 μm
+  Using mixed precision training (FP16) for faster GPU computation
+
+============================================================
+Training SimpleCNN
+============================================================
+Epoch [1/50]
+  Train Loss: 4.6005, Train MAE: 1.6974
+  Val Loss: 3.1161, Val MAE: 1.3989, Val RMSE: 1.7652, Val R²: -1.1713
+Epoch [5/50]
+  Train Loss: 0.7913, Train MAE: 0.6924
+  Val Loss: 0.6280, Val MAE: 0.6611, Val RMSE: 0.7925, Val R²: 0.5624
+Epoch [10/50]
+  Train Loss: 0.6630, Train MAE: 0.5923
+  Val Loss: 0.1823, Val MAE: 0.3440, Val RMSE: 0.4269, Val R²: 0.8730
+Epoch [15/50]
+  Train Loss: 0.7113, Train MAE: 0.6609
+  Val Loss: 0.2820, Val MAE: 0.4362, Val RMSE: 0.5311, Val R²: 0.8035
+Epoch [20/50]
+  Train Loss: 0.4512, Train MAE: 0.5074
+  Val Loss: 0.0806, Val MAE: 0.2471, Val RMSE: 0.2838, Val R²: 0.9439
+Epoch [25/50]
+  Train Loss: 0.3947, Train MAE: 0.4662
+  Val Loss: 0.5508, Val MAE: 0.6536, Val RMSE: 0.7422, Val R²: 0.6162
+Epoch [30/50]
+  Train Loss: 0.3299, Train MAE: 0.4565
+  Val Loss: 0.3265, Val MAE: 0.5038, Val RMSE: 0.5714, Val R²: 0.7725
+Epoch [35/50]
+  Train Loss: 0.4390, Train MAE: 0.5407
+  Val Loss: 0.3700, Val MAE: 0.5133, Val RMSE: 0.6083, Val R²: 0.7422
+Epoch [40/50]
+  Train Loss: 0.2746, Train MAE: 0.4033
+  Val Loss: 0.4491, Val MAE: 0.5966, Val RMSE: 0.6702, Val R²: 0.6870
+Epoch [45/50]
+  Train Loss: 0.3450, Train MAE: 0.4416
+  Val Loss: 0.3877, Val MAE: 0.5352, Val RMSE: 0.6227, Val R²: 0.7298
+Epoch [50/50]
+  Train Loss: 0.3095, Train MAE: 0.4326
+  Val Loss: 0.3288, Val MAE: 0.4912, Val RMSE: 0.5735, Val R²: 0.7709
+SimpleCNN: 100%|████████████████| 50/50 [12:14<00:00, 14.69s/epoch, train_loss=0.3095, val_mae=0.4912, best_mae=0.1722]
+
+Best Val MAE: 0.1722
+Model saved to: models\SimpleCNN_best.pth
+  Using mixed precision training (FP16) for faster GPU computation
+
+============================================================
+Training ResNet18
+============================================================
+Epoch [1/50]
+  Train Loss: 3.9845, Train MAE: 1.5436
+  Val Loss: 3.5836, Val MAE: 1.4638, Val RMSE: 1.8930, Val R²: -1.4970
+Epoch [5/50]
+  Train Loss: 0.6357, Train MAE: 0.6139
+  Val Loss: 0.1502, Val MAE: 0.3249, Val RMSE: 0.3875, Val R²: 0.8954
+Epoch [10/50]
+  Train Loss: 0.4501, Train MAE: 0.5210
+  Val Loss: 0.0760, Val MAE: 0.2324, Val RMSE: 0.2757, Val R²: 0.9470
+Epoch [15/50]
+  Train Loss: 0.3348, Train MAE: 0.4678
+  Val Loss: 0.9839, Val MAE: 0.8093, Val RMSE: 0.9919, Val R²: 0.3144
+Epoch [20/50]
+  Train Loss: 0.4324, Train MAE: 0.5067
+  Val Loss: 3.2428, Val MAE: 1.7871, Val RMSE: 1.8008, Val R²: -1.2596
+Epoch [25/50]
+  Train Loss: 0.4171, Train MAE: 0.5029
+  Val Loss: 0.1046, Val MAE: 0.2431, Val RMSE: 0.3235, Val R²: 0.9271
+Epoch [30/50]
+  Train Loss: 0.3016, Train MAE: 0.4279
+  Val Loss: 0.0661, Val MAE: 0.2129, Val RMSE: 0.2570, Val R²: 0.9540
+Epoch [35/50]
+  Train Loss: 0.3271, Train MAE: 0.4408
+  Val Loss: 0.0156, Val MAE: 0.1111, Val RMSE: 0.1250, Val R²: 0.9891
+Epoch [40/50]
+  Train Loss: 0.2943, Train MAE: 0.4110
+  Val Loss: 0.0146, Val MAE: 0.0953, Val RMSE: 0.1209, Val R²: 0.9898
+Epoch [45/50]
+  Train Loss: 0.3486, Train MAE: 0.4500
+  Val Loss: 0.0194, Val MAE: 0.1088, Val RMSE: 0.1391, Val R²: 0.9865
+Epoch [50/50]
+  Train Loss: 0.3424, Train MAE: 0.4638
+  Val Loss: 0.0459, Val MAE: 0.1791, Val RMSE: 0.2142, Val R²: 0.9680
+ResNet18: 100%|█████████████████| 50/50 [08:58<00:00, 10.76s/epoch, train_loss=0.3424, val_mae=0.1791, best_mae=0.0795]
+
+Best Val MAE: 0.0795
+Model saved to: models\ResNet18_best.pth
+  Using mixed precision training (FP16) for faster GPU computation
+
+============================================================
+Training EfficientNetB0
+============================================================
+Epoch [1/50]
+  Train Loss: 4.6130, Train MAE: 1.7386
+  Val Loss: 0.1206, Val MAE: 0.2753, Val RMSE: 0.3472, Val R²: 0.9160
+Epoch [5/50]
+  Train Loss: 0.3521, Train MAE: 0.4807
+  Val Loss: 0.2082, Val MAE: 0.4381, Val RMSE: 0.4563, Val R²: 0.8549
+Epoch [10/50]
+  Train Loss: 0.2376, Train MAE: 0.3978
+  Val Loss: 0.3509, Val MAE: 0.5655, Val RMSE: 0.5923, Val R²: 0.7555
+Epoch [15/50]
+  Train Loss: 0.2772, Train MAE: 0.4157
+  Val Loss: 0.0739, Val MAE: 0.2288, Val RMSE: 0.2718, Val R²: 0.9485
+Epoch [20/50]
+  Train Loss: 0.1424, Train MAE: 0.2880
+  Val Loss: 0.0549, Val MAE: 0.2085, Val RMSE: 0.2344, Val R²: 0.9617
+Epoch [25/50]
+  Train Loss: 0.1292, Train MAE: 0.2836
+  Val Loss: 0.0545, Val MAE: 0.1878, Val RMSE: 0.2334, Val R²: 0.9620
+Epoch [30/50]
+  Train Loss: 0.1289, Train MAE: 0.2792
+  Val Loss: 0.0276, Val MAE: 0.1416, Val RMSE: 0.1660, Val R²: 0.9808
+Epoch [35/50]
+  Train Loss: 0.1097, Train MAE: 0.2575
+  Val Loss: 0.0397, Val MAE: 0.1601, Val RMSE: 0.1992, Val R²: 0.9723
+Epoch [40/50]
+  Train Loss: 0.1004, Train MAE: 0.2527
+  Val Loss: 0.0186, Val MAE: 0.1167, Val RMSE: 0.1365, Val R²: 0.9870
+Epoch [45/50]
+  Train Loss: 0.1078, Train MAE: 0.2530
+  Val Loss: 0.0083, Val MAE: 0.0736, Val RMSE: 0.0911, Val R²: 0.9942
+Epoch [50/50]
+  Train Loss: 0.0877, Train MAE: 0.2260
+  Val Loss: 0.0224, Val MAE: 0.1269, Val RMSE: 0.1497, Val R²: 0.9844
+EfficientNetB0: 100%|███████████| 50/50 [09:08<00:00, 10.98s/epoch, train_loss=0.0877, val_mae=0.1269, best_mae=0.0638]
+
+Best Val MAE: 0.0638
+Model saved to: models\EfficientNetB0_best.pth
+
+Training history plot saved to: training_comparison.png
+
+============================================================
+FINAL EVALUATION ON TEST SET
+============================================================
+
+SimpleCNN - Test Set Results:
+  MAE: 0.1963 μm
+  RMSE: 0.2353 μm
+  R² Score: 0.9637
+Evaluation plot saved to: results\SimpleCNN_evaluation.png
+
+ResNet18 - Test Set Results:
+  MAE: 0.1128 μm
+  RMSE: 0.1563 μm
+  R² Score: 0.9840
+Evaluation plot saved to: results\ResNet18_evaluation.png
+
+EfficientNetB0 - Test Set Results:
+  MAE: 0.0805 μm
+  RMSE: 0.1060 μm
+  R² Score: 0.9926
+Evaluation plot saved to: results\EfficientNetB0_evaluation.png
+
+============================================================
+MODEL COMPARISON SUMMARY
+============================================================
+
+         Model  MAE (μm)  RMSE (μm)  R² Score
+     SimpleCNN  0.196262   0.235297  0.963663
+      ResNet18  0.112825   0.156301  0.983966
+EfficientNetB0  0.080470   0.106036  0.992621
+
+Comparison saved to: results/model_comparison.csv
+
+🏆 Best Model: EfficientNetB0
