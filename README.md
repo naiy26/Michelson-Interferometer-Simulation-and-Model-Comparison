@@ -261,6 +261,6 @@ This project is provided as-is for educational and research purposes.
 
 ## Contact
 
-For questions or issues, please open an issue in the repository or contact [your email].
+For questions or issues, please open an issue in the repository or contact naiyagg@gmail.com.
 
 
