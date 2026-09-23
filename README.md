@@ -6,6 +6,8 @@ This project uses deep learning to predict the d-value (path difference) from Mi
 
 The dataset consists of 400 Michelson interferometer images with corresponding d-values ranging from 1 μm to 5 μm with a step size of 0.01 μm. Images are sorted by the last six digits of their filenames (timestamp) and labels are assigned linearly across this range.
 
+(The dataset is not published in order to protect participant privacy and comply with research privacy requirements.)
+
 ### Creating Labels
 
 Before training, generate the label file:
